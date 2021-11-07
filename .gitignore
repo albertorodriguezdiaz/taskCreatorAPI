@@ -7,6 +7,9 @@
 # production
 /build
 
+#Sensitive
+variables.env
+
 # misc
 .DS_Store
 .env

@@ -10,9 +10,8 @@ conectarDB();
 // Puerto de la app
 const PORT = process.env.PORT || 4000;
 
-app.get('/', (req, res) =>{
-    res.send('Hola mundo');
-});
+// Importar rutas
+app.use('/api/usuarios', require('./routes/usuarios'));
 
 // Arrancar la app
 app.listen(PORT, () => {
