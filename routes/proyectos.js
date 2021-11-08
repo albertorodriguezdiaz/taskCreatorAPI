@@ -32,7 +32,7 @@ router.put('/:id',
     proyectoController.actualizarProyecto
 );
 
-// actualizar proyecto via ID
+// Eliminar proyecto via ID
 router.delete('/:id',
     auth,
     proyectoController.eliminarProyecto
